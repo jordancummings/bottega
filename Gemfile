@@ -56,4 +56,4 @@ gem 'devise', '~> 4.3'
 gem 'bootstrap', '~> 4.0.0.beta2.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
-gem 'cummings_view_tool', git: 'https://github.com/jordancummings/cummings_view_tool'
+gem 'cummings_view_tool', '~> 0.1.0'

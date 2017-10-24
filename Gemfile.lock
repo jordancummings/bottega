@@ -1,9 +1,3 @@
-GIT
-  remote: https://github.com/jordancummings/cummings_view_tool
-  revision: 7f95ebf4f83aa473c73fd6f9bb1bf83412935678
-  specs:
-    cummings_view_tool (0.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -64,6 +58,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
     crass (1.0.2)
+    cummings_view_tool (0.1.0)
     devise (4.3.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -193,7 +188,7 @@ DEPENDENCIES
   bootstrap (~> 4.0.0.beta2.1)
   byebug
   coffee-rails (~> 4.2)
-  cummings_view_tool!
+  cummings_view_tool (~> 0.1.0)
   devise (~> 4.3)
   friendly_id (~> 5.2, >= 5.2.3)
   jbuilder (~> 2.5)
