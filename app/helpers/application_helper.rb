@@ -17,4 +17,8 @@ module ApplicationHelper
     end
   end
 
+  def copyright_generator
+    CummingsViewTool::Renderer.copyright "Jordan Cummings", "All rights (and lefts) reserved"
+  end
+
 end
