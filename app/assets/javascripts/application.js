@@ -18,3 +18,11 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
+
+
+
+
+
+$('#navbar li').click(function() {
+    $(this).addClass('active').siblings('li').removeClass('active');
+});

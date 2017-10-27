@@ -1,0 +1,10 @@
+<ul id="navbar">
+  <li class="active">
+  <li><%= link_to "Home", root_path, class: "navbar-left" %></li>
+  <li><%= link_to "About Me", about_path, class: "navbar-left" %></li>
+  <li><%= link_to "Contact", contact_path, class: "navbar-left" %></li>
+  <li><%= link_to "Blog", blogs_path, class: "navbar-left" %></li>
+  <li><%= link_to "Portfolio", portfolios_path, class: "navbar-left" %></li>
+  <%= login_helper "navbar-right" %>
+</ul>
+
