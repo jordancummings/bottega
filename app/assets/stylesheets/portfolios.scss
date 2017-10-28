@@ -1,19 +1,15 @@
 @import "bootstrap";
 @import "font-awesome";
 
-body {
-  min-height: 75rem; /* Can be removed; just added for demo purposes */
-}
-
 .navbar {
   margin-bottom: 0;
 }
 
 .jumbotron {
-  padding-top: 6rem;
   padding-bottom: 6rem;
   margin-bottom: 0;
-  background-color: #fff;
+  background-color: #f7f7f7;
+  color: #868e96 !important;
 }
 
 .jumbotron p:last-child {
@@ -22,6 +18,7 @@ body {
 
 .jumbotron-heading {
   font-weight: 300;
+  font-size: 3.5em;
 }
 
 .jumbotron .container {
@@ -62,84 +59,107 @@ footer p {
 
 
 
-html, body {
-  height: 100%;
-}
-body {
-  margin: 0;
-  background-color: lightsteelblue;
-  background-image: url('http://hdw.datawallpaper.com/architecture/vintage-new-york-city-299988.jpg');
-  background-position: center;
-  background-size: cover;
-  -webkit-background-blend-mode: overlay;
-  -moz-background-blend-mode: overlay;
-  background-blend-mode: overlay;
-}
 
-#navbar {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  height: 60px;
+/* Global Styling ****************************************/
+body, header, nav, main {
   margin: 0;
   padding: 0;
-  list-style: none;
-  background: #222;
-  font-family: 'Oswald', sans-serif;
-  font-size: 18px;
-  font-weight: 300;
 }
 
-#navbar li {
-  position: relative;
-  float: left;
-  line-height: 60px;
-  background: inherit;
+html {
+  background: #222 url("https://static.pexels.com/photos/31532/pexels-photo.jpg") no-repeat center center fixed;
+}
+
+body {
+  font-family: "Helvetica", sans-sarif;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Header Styles ****************************************/
+header {
+  height: 500px;
   text-align: center;
-  transition: all .2s;
+  background: #383838;
 }
 
-#navbar li a {
-  position: relative;
+header h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+  letter-spacing: 5px;
+  word-spacing: -10px;
+  padding-top: 250px;
+  margin: 0;
+}
+
+header hr {
   display: block;
-  padding: 0 20px;
-  line-height: inherit;
-  color: white;
+  margin: 0 auto 25px;
+  border: 0;
+  height: 1px;
+  width: 60%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 0));
+}
+
+.social {
+  width: 100%;
+  display: block;
+}
+
+.social a {
   text-decoration: none;
+  color: #fff;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 0 10px;
+  padding: 5px;
 }
 
-#navbar li:before {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 50%;
-  margin-left: -30px;
-  width: 60px;
-  height: 60px;
-  background: #222;
-  border-radius: 50%;
-  transform: rotate(45deg);
-  transition: all 0, background .2s;
-}
-#navbar li:hover:before {
-  margin-top: 1px;
-  border-radius: 50% 50% 0 50%;
-  transition: all .1s, background .2s, margin-top .2s cubic-bezier(.5,30,.2,0);
-}
-#navbar li:hover,
-#navbar li:hover:before {
-  background: #3a3a3a;
-}
-#navbar li.active,
-#navbar li.active:before {
-  background: steelblue;
+.social a:hover {
+  background: rgba(0, 0, 0, .25);
 }
 
-.navbar-left {
-  float: left;
+/* Navbar Styling ****************************************/
+nav {
+  background: #383838;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  margin-bottom: -50px;
+  padding: 5px 0;
+  transition: box-shadow 0.5s ease;
 }
 
-.navbar-right {
-  float: right;
+nav li {
+  display: inline-block;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 22px;
+}
+
+nav a:hover {
+  background: #fff;
+  color: black;
+}
+
+/* Sticky Navigation ****************************************/
+.navScrolled {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0 1px 5px #000;
+}
+
+/* Main Styles ****************************************/
+main {
+  position: relative;
+  height: 1500px;
+  text-align: center;
+  margin-top: 150px;
 }

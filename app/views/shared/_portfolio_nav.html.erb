@@ -1,10 +1,23 @@
-<ul id="navbar">
-  <li class="active">
-  <li><%= link_to "Home", root_path, class: "navbar-left" %></li>
-  <li><%= link_to "About Me", about_path, class: "navbar-left" %></li>
-  <li><%= link_to "Contact", contact_path, class: "navbar-left" %></li>
-  <li><%= link_to "Blog", blogs_path, class: "navbar-left" %></li>
-  <li><%= link_to "Portfolio", portfolios_path, class: "navbar-left" %></li>
-  <%= login_helper "navbar-right" %>
-</ul>
+<nav id="topNav">
+  <ul>
+    <li><%= link_to "Home", root_path, class: "navbar-left" %></li>
+    <li><%= link_to "About Me", about_path, class: "navbar-left" %></li>
+    <li><%= link_to "Contact", contact_path, class: "navbar-left" %></li>
+    <li><%= link_to "Blog", blogs_path, class: "navbar-left" %></li>
+    <li><%= link_to "Portfolio", portfolios_path, class: "navbar-left" %></li>
+    <li class="right"><%= login_helper "navbar-right" %></li>
+  </ul>
+</nav>
+<header>
+  <!-- Profile Pic -->
+  <h1>Jordan Cummings</h1>
+  <hr>
 
+  <!-- Social icons -->
+  <div class="social">
+    <a href="https://twitter.com">Twitter</a>
+    <a href="https://github.com">Github</a>
+    <a href="https://codepen.io">Codepen</a>
+    <a href="https://www.linkedin.com">LinkedIn</a>
+  </div>
+</header>
