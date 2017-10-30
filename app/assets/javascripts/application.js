@@ -27,7 +27,7 @@
 
 
 
-var $menu = $('#menu'), // replace #menu with your selector
+var $menu = $('navbar-top'), // replace #menu with your selector
   menuOffsetTop = $menu[0].offsetTop;
 
 $(document).bind('ready scroll', function () {
@@ -39,3 +39,4 @@ $(document).bind('ready scroll', function () {
       $menu.removeClass('fixed');
   }
 });
+
