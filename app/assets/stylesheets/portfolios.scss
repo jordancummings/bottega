@@ -74,7 +74,7 @@ html {
 body {
   font-family: 'Dosis', sans-serif;
   font-size: 16px;
-  color: #fff;
+  color: #343a40;
 }
 
 /* Header Styles ****************************************/
@@ -87,6 +87,7 @@ header {
 }
 
 header h1 {
+  color: white;
   text-shadow:
     -1px -1px 0 #3a3a3a,
     1px -1px 0 #3a3a3a,
@@ -111,20 +112,20 @@ header hr {
 
 .social {
   text-shadow:
-    -0.3px -0.3px 0 #000000,
-    0.3px -0.3px 0 #000000,
-    -0.3px 0.3px 0 #000000,
-    0.3px 0.3px 0 #000000;
+    -0.5px -0.5px 0 #000000,
+    0.5px -0.5px 0 #000000,
+    -0.5px 0.5px 0 #000000,
+    0.5px 0.5px 0 #000000;
   width: 100%;
   display: block;
 }
 
 .social a {
   text-shadow:
-    -0.3px -0.3px 0 #000000,
-    0.3px -0.3px 0 #000000,
-    -0.3px 0.3px 0 #000000,
-    0.3px 0.3px 0 #000000;
+    -0.5px -0.5px 0 #000000,
+    0.5px -0.5px 0 #000000,
+    -0.5px 0.5px 0 #000000,
+    0.5px 0.5px 0 #000000;
   text-decoration: none;
   line-height: 37px;
   color: #fff;
@@ -185,3 +186,12 @@ main {
   text-align: center;
 }
 
+
+
+
+/* custom styles */
+
+.portfolio-form {
+  padding: 22px;
+  text-align: left;
+}
