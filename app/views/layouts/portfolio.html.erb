@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
 
@@ -10,17 +12,17 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <%= render 'shared/portfolio_nav' %>
+    <main>
+      <%= render 'shared/portfolio_masthead' %>
 
-    <%= render "shared/nav", location: "top" %>
+      <%= yield %>
 
-    <%= login_helper %>
-
-    <%= yield %>
-
-    <%= source_helper("application") %>
+      <%= render 'shared/portfolio_footer' %>
+      <%= source_helper("application") %>
+    </main>
 
   </body>
 </html>

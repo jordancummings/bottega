@@ -18,3 +18,25 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
+
+
+
+
+
+
+
+
+
+var $menu = $('navbar-top'), // replace #menu with your selector
+  menuOffsetTop = $menu[0].offsetTop;
+
+$(document).bind('ready scroll', function () {
+  var docScroll = $(this).scrollTop();
+
+  if (docScroll >= menuOffsetTop) {
+      $menu.addClass('fixed');
+  } else {
+      $menu.removeClass('fixed');
+  }
+});
+
