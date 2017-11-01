@@ -1,9 +1,16 @@
+User.create(
+  email: "jordan.dale.cummings@gmail.com",
+  name: "Jordan Cummings",
+  password: "girl5fir5t",
+  password_confirmation: "girl5fir5t",
+  roles: "site_admin"
+  )
+
 3.times do |topic|
   Topic.create!(
     title: "Topic #{topic}"
   )
 end
-
 
 10.times do |blog|
   Blog.create!(

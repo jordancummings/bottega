@@ -18,17 +18,13 @@
 //= require rails-ujs
 //= require popper
 //= require html.sortable
+//= require cocoon
 //= require turbolinks
 //= require_tree .
 
 
-
-
-
-
-
-
-
+// js logic for sticky portfolio navbar
+// to be updated or replaced as the app layout is changed
 var $menu = $('navbar-top'), // replace #menu with your selector
   menuOffsetTop = $menu[0].offsetTop;
 
@@ -41,4 +37,3 @@ $(document).bind('ready scroll', function () {
       $menu.removeClass('fixed');
   }
 });
-
