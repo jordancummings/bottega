@@ -6,11 +6,11 @@ jQuery(document).on 'turbolinks:load', ->
       blog_id: comments.data('blog-id')
     },
     connected: ->
-    disconnect: ->
+    disconnected: ->
     received: (data) ->
       comments.append data['comment']
     send_comment: (comment, blog_id) ->
-      @perform 'send-comment', comment: comment, blog_id: blog_id
+      @perform 'send_comment', comment: comment, blog_id: blog_id
   $('#new_comment').submit (e) ->
     $this = $(this)
     textarea = $this.find('#comment_content')
