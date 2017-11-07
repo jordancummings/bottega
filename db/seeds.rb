@@ -1,10 +1,21 @@
-User.create(
+User.create!(
   email: "jordan.dale.cummings@gmail.com",
   name: "Jordan Cummings",
   password: "girl5fir5t",
   password_confirmation: "girl5fir5t",
   roles: "site_admin"
   )
+
+puts "1 Admin user created"
+
+User.create!(
+  email: "test@gmail.com",
+  name: "Guest User",
+  password: "asdfasdf",
+  password_confirmation: "asdfasdf",
+  )
+
+puts "1 regular user created"
 
 3.times do |topic|
   Topic.create!(
