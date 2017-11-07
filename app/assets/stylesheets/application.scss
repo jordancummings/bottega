@@ -57,7 +57,9 @@ body {
 
 /* Padding for spacing */
 .inner {
-  padding: 1rem;
+  padding: 0.6rem;
+  background-color: rgba(95,95,95,0.2);
+  border-radius: 11px;
 }
 
 
@@ -232,4 +234,23 @@ body {
 
 .tech-news > .card {
   padding: 22px;
+}
+
+.app-card-container .card {
+  background-color: rgba(95,95,95,0.3);
+  padding: 30px;
+  text-align: left;
+  border-radius: 15px;
+}
+
+.app-card-container > .card {
+  padding: 40px;
+}
+
+.app-card-container a {
+  color: blue;
+}
+
+.profile-img {
+  border: 1px solid grey;
 }
