@@ -179,7 +179,7 @@ body {
  */
 
 .card-block {
-  color: black;
+  color: white;
   text-align: left;
 }
 
@@ -253,4 +253,10 @@ body {
 
 .profile-img {
   border: 1px solid grey;
+}
+
+.card-block > .job {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: white;
 }
