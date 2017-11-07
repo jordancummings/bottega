@@ -1,6 +1,11 @@
 @import "bootstrap";
 @import "gritter";
 
+@font-face {
+  font-family: 'Dosis';
+  src:font-url('fonts/Dosis-Regular.ttf');
+}
+
 /*
  * Globals
  */
@@ -30,11 +35,22 @@ a:hover {
 html,
 body {
   height: 100%;
+  font-family: 'Dosis';
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+  font-family: 'Dosis';
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Dosis';
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -57,7 +73,9 @@ body {
 
 /* Padding for spacing */
 .inner {
-  padding: 1rem;
+  padding: 0.6rem;
+  background-color: rgba(95,95,95,0.2);
+  border-radius: 11px;
 }
 
 
@@ -89,6 +107,7 @@ body {
     .5px -.5px 0 #000,
     -.5px .5px 0 #000,
     .5px .5px 0 #000;
+    font-size: 1.3em;
 }
 
 .nav-masthead .nav-link:hover,
@@ -167,7 +186,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 63rem;
+    width: 64rem;
   }
 }
 
@@ -210,11 +229,11 @@ body {
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -100;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-42%);
+  transform: translateX(-50%) translateY(-42%);
   background: image-url('background.jpeg') no-repeat;
   background-size: cover;
+  z-index: -100;
 }
 
 .app-footer {
@@ -232,4 +251,34 @@ body {
 
 .tech-news > .card {
   padding: 22px;
+}
+
+.app-card-container .card {
+  background-color: rgba(95,95,95,0.3);
+  padding: 30px;
+  text-align: left;
+  border-radius: 15px;
+}
+
+.app-card-container > .card {
+  padding: 40px;
+}
+
+.app-card-container a {
+  color: blue;
+}
+
+.profile-img {
+  border: 1px solid grey;
+}
+
+.card-block > .job {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.skill {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

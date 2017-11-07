@@ -3,6 +3,11 @@
 @import "jquery-ui";
 @import "gritter";
 
+@font-face {
+  font-family: 'Dosis';
+  src:font-url('fonts/Dosis-Regular.ttf');
+}
+
 .navbar {
   margin-bottom: 0;
 }
@@ -36,7 +41,7 @@
 
 .card {
   float: left;
-  width: 33.333%;
+  width: 100%;
   padding: .75rem;
   margin-bottom: 2rem;
   border: 0;
@@ -54,7 +59,7 @@
 
 /* Global Styling ****************************************/
 body, header, nav, main {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Dosis';
   margin: 0;
   padding: 0;
 }
@@ -64,7 +69,7 @@ html {
 }
 
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Dosis';
   font-size: 16px;
   color: #343a40;
 }

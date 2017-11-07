@@ -2,6 +2,11 @@
 @import "font-awesome";
 @import "gritter";
 
+@font-face {
+  font-family: 'Dosis';
+  src:font-url('fonts/Dosis-Regular.ttf');
+}
+
 /*
  * Globals
  */
@@ -13,7 +18,7 @@
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Dosis', sans-serif;
   color: #555;
 }
 
@@ -23,7 +28,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-weight: normal;
   color: #333;
 }
@@ -190,4 +195,17 @@ h6, .h6 {
 
 .comment-name {
   font-weight: 700;
+}
+
+.edit-right {
+  margin-left: 40%;
+}
+
+.blogcrumb a {
+  font-size: 1.3em;
+  margin: 0px 20px;
+}
+
+.blog-sidebar-source {
+  margin-top: 25px;
 }
