@@ -1,6 +1,11 @@
 @import "bootstrap";
 @import "gritter";
 
+@font-face {
+  font-family: 'Dosis';
+  src:font-url('fonts/Dosis-Regular.ttf');
+}
+
 /*
  * Globals
  */
@@ -30,11 +35,22 @@ a:hover {
 html,
 body {
   height: 100%;
+  font-family: 'Dosis';
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+  font-family: 'Dosis';
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Dosis';
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -212,11 +228,11 @@ body {
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -100;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-42%);
+  transform: translateX(-50%) translateY(-42%);
   background: image-url('background.jpeg') no-repeat;
   background-size: cover;
+  z-index: -100;
 }
 
 .app-footer {
