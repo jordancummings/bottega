@@ -12,7 +12,6 @@
 //
 
 //= require jquery
-//= require bootstrap-sprockets
 //= require jquery-ui
 //= require rails-ujs
 //= require popper
@@ -22,6 +21,7 @@
 //= require cable
 //= require turbolinks
 //= require_tree .
+//= require bootstrap-sprockets
 
 
 // js logic for sticky portfolio navbar
