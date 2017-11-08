@@ -11,18 +11,17 @@
 // about supported directives.
 //
 
-//= require jquery
+//= require jquery3
 //= require jquery-ui
-//= require rails-ujs
-//= require popper
 //= require html.sortable
 //= require cocoon
 //= require gritter
 //= require cable
+//= require popper
+//= require rails-ujs
 //= require turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
-
 
 // js logic for sticky portfolio navbar
 // to be updated or replaced as the app layout is changed
