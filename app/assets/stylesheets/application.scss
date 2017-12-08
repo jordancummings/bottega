@@ -25,6 +25,9 @@ a:hover {
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
   border: .05rem solid #fff;
+  margin-bottom: 15px;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
 
@@ -209,7 +212,7 @@ h6, .h6 {
 }
 
 .card-block {
-  margin: 14px;
+  margin: 8px;
 }
 
 .login > .card {
@@ -261,7 +264,7 @@ h6, .h6 {
 }
 
 .app-card-container > .card {
-  padding: 40px;
+  padding: 30px;
 }
 
 .app-card-container a {
@@ -273,8 +276,8 @@ h6, .h6 {
 }
 
 .card-block > .job {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 3px;
+  margin-bottom: 3px;
   color: white;
 }
 

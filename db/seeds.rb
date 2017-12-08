@@ -17,58 +17,56 @@ User.create!(
 
 puts "1 regular user created"
 
-3.times do |topic|
-  Topic.create!(
-    title: "Topic #{topic}"
-  )
-end
+Topic.create!(title: "Ruby")
+Topic.create!(title: "Ruby on Rails")
+Topic.create!(title: "Javascript")
+Topic.create!(title: "Angular")
 
-10.times do |blog|
-  Blog.create!(
-    title: "My Blog Post #{blog}",
-    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+puts "Topics created"
+
+Blog.create!(
+    title: "Angular Framework",
+    body: "I recently started learning Typescript, and after learning the basics, I dove right into Angular. I began building a web application using the Angular framework. More updates on this project will follow as I progress and complete the work.",
     topic_id: Topic.last.id
   )
-end
 
-puts "10 blog posts created"
+puts "Blog posts created"
 
-5.times do |skill|
-  Skill.create!(
-    title: "Rails #{skill}",
-    percent_utilized: 15
-  )
-end
+Skill.create!(title: "Ruby, Ruby on Rails", percent_utilized: 70)
+Skill.create!(title: "HTML/CSS", percent_utilized: 50)
+Skill.create!(title: "TDD/BDD", percent_utilized: 40)
+Skill.create!(title: "Javascript", percent_utilized: 30)
+Skill.create!(title: "Typescript/Angular", percent_utilized: 20)
 
 puts "5 skills created"
 
-
-8.times do |portfolio_item|
-  Portfolio.create!(
-    title: "Portfolio title: #{portfolio_item}",
-    subtitle: "Ruby on Rails",
-    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    main_image: "http://via.placeholder.com/600x400",
-    thumb_image: "http://via.placeholder.com/350x200",
+Portfolio.create!(
+  title: "Portfolio Web Application",
+  subtitle: "Ruby on Rails",
+  body: "I used the Ruby on Rails framework, along with dozens of Ruby gems, HTML, custom CSS and SCSS stylings, and javascript to create this portfolio website. Yes, the one you're looking at now. Yes, I realize this creates some potentially confusing recursion.",
+  main_image: "website.png",
+  thumb_image: "website.png",
   )
-end
 
-1.times do |portfolio_item|
-  Portfolio.create!(
-    title: "Portfolio title: #{portfolio_item}",
-    subtitle: "Angular",
-    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    main_image: "http://via.placeholder.com/600x400",
-    thumb_image: "http://via.placeholder.com/350x200",
+Portfolio.create!(
+  title: "Cummings View Tool",
+  subtitle: "Ruby Gem",
+  body: "A custom ruby gem I built. It helps generate and display copyright footers for web applications. I used ruby to build this gem. Can be found on my github, here: https://github.com/jordancummings/cummings_view_tool",
+  main_image: "ruby_icon.png",
+  thumb_image: "ruby_icon.png",
   )
-end
 
-puts "9 portfolio items created"
-
-3.times do |technology|
-  Portfolio.last.technologies.create!(
-    name: "Technology #{technology}",
+Portfolio.create!(
+  title: "Overtime App",
+  subtitle: "Ruby on Rails",
+  body: "Built with Ruby, Ruby on Rails, Bootstrap, Javascript, and dozens of Ruby gems. This web application helps track employee overtime and includes pagination, mailer systems, automatic updates, confirmations. Can be found on my github, here: https://github.com/jordancummings/overtime-app (actual weblink to follow, once the app is pushed live).",
+  main_image: "github.png",
+  thumb_image: "github.png",
   )
-end
 
-puts "3 technologies created"
+Portfolio.last.technologies.create!(name: "Ruby")
+Portfolio.last.technologies.create!(name: "Ruby on Rails")
+Portfolio.last.technologies.create!(name: "Javascript")
+Portfolio.last.technologies.create!(name: "Angular")
+
+puts "Technologies created"

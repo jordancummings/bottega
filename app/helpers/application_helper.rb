@@ -34,10 +34,12 @@ module ApplicationHelper
         url: contact_path,
         title: "Contact"
       },
-            {
-        url: blogs_path,
-        title: "Blog"
-      },
+      #  Commented out the blogs path until stylings look decent and other issues are resolved
+      #  TODO: Fix topics in sidebar, display blog posts on "blogs" page, properly link topics to blogs and vice versa, update stylings to look more similar to application stylings.
+      #       {
+      #   url: blogs_path,
+      #   title: "Blog"
+      # },
             {
         url: portfolios_path,
         title: "Portfolio"

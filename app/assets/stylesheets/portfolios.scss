@@ -36,7 +36,6 @@
   min-height: 50rem; /* Can be removed; just added for demo purposes */
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #f7f7f7;
 }
 
 .card {
@@ -62,6 +61,7 @@ body, header, nav, main {
   font-family: 'Dosis';
   margin: 0;
   padding: 0;
+  background-color: #f7f7f7;
 }
 
 html {
@@ -164,7 +164,8 @@ nav a {
 }
 
 nav a:hover {
-  background: #fff;
+  text-decoration: none;
+  background-color: rgba(80, 80, 80, 0.8);
   color: black;
 }
 
@@ -190,5 +191,10 @@ main {
 
 .portfolio-container {
   padding-top: 40px;
-  text-align: left;
+  text-align: center;
+}
+
+.float-right {
+  position: absolute;
+  bottom: 5px;
 }

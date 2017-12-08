@@ -7,20 +7,11 @@
     <div class="row">
       <div class="col-md-4">
         <%= image_tag 'profile.png', alt: 'profile image', class: 'profile-img' %>
+        <h2>Skills and languages</h2>
         <div class="skills">
           <% @skills.each do |skill| %>
             <div class="skill">
               <h4><%= skill.title %></h4>
-              <div class="progress">
-                <div
-                  class="progress-bar progress-bar-striped bg-success"
-                  role="progressbar"
-                  aria-valuenow="<%= skill.percent_utilized %>"
-                  aria-valuemax="100"
-                  style="width: <%= skill.percent_utilized %>%"
-                  >
-                </div>
-              </div>
             </div>
 
           <% end %>
@@ -28,10 +19,7 @@
       </div>
 
       <div class="col-md-8 about">
-        <p>As a new developer, I have devoured information and training from every resource possible. I've worked alongside junior- and mid-level developers and have built my own projects (which you can find in my portfolio).</p>
-
-        <p>I strive for excellence in both form and functionality, and work hard to deliver a product that satisfies client's needs and desires, delivered on time and on budget.</p>
-
+        <p>I am a father of four. I love puzzles and riddles because I like thinking logically and problem solving. I enjoy sports, gaming, and movies, and I'm passionate about theatre, music, writing, and cooking. I'm an eclipse chaser and I'll travel the world to see them.</p>
         <p>
           <button
             class="btn btn-primary"
@@ -59,25 +47,19 @@
         <p>
           <div class="collapse" id="jobHistory">
             <div class="card card-block job">
-              Job 1
+              Hospitality/Management
+              <p>Team management, leadership, customer service, workflow management</p>
             </div>
 
             <div class="card card-block job">
-              Job 2
+              Actor/Writer
+              <p>Collaboration, creativity, problem solving, deadline management</p>
             </div>
           </div>
 
           <div class="collapse" id="education">
             <div class="card card-block job">
-              School 1
-            </div>
-
-            <div class="card card-block job">
-              School 2
-            </div>
-
-            <div class="card card-block job">
-              School 3
+              Utah Valley University, BS Theatre Performance (2018, expected)
             </div>
           </div>
         </p>
